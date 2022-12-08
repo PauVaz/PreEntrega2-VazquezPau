@@ -1,0 +1,184 @@
+body {
+  background-image: url(../multimedia/marmolclaro.jpg);
+  background-color: #080707;
+  background-size: auto;
+  background-attachment: fixed;
+  background-position-x: center;
+  font-family: Montserrat; }
+
+main {
+  background-color: rgba(163, 140, 127, 0.508);
+  margin-top: 2%;
+  padding: 10%;
+  border-radius: 5%; }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  header nav {
+    width: 50%; }
+    header nav li {
+      display: flex;
+      border-color: aqua; }
+
+.grid {
+  display: grid;
+  justify-self: center;
+  /* 4 columnas */
+  grid-template-columns: 3fr;
+  /* 4 filas */
+  grid-template-rows: 3fr;
+  padding: 0.5%;
+  text-align: center;
+  align-items: center; }
+
+.cejis {
+  justify-items: center; }
+
+.titus {
+  text-align: center; }
+
+.tituxl {
+  text-align: center;
+  text-size-adjust: 2px; }
+
+.tablafinal {
+  background-color: rgba(74, 57, 40, 0.732);
+  margin-left: 8%;
+  border-radius: 10%;
+  text-align: center; }
+
+.galeria {
+  width: 50px;
+  height: 50px; }
+
+.scale:hover {
+  transform: scale(1.5, 1.5); }
+
+.aparecer {
+  margin: center;
+  animation-duration: 10s;
+  animation-name: aparecer;
+  width: 100%;
+  /* weight: fit-content; */ }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px; }
+
+.grid-item {
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  /* border: 1px solid rgba(0, 0, 0, 0.8); */
+  padding: 15px;
+  font-size: 0.5cm;
+  text-align: center;
+  align-items: center; }
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  grid-auto-flow: column;
+  padding: 10px; }
+
+.grid-container3 {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  /* grid-template-rows: auto auto; */
+  /* grid-auto-flow: column; */
+  padding: 1px; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+
+table {
+  padding: 2%;
+  margin-left: 1%;
+  margin-right: 3%;
+  justify-content: center; }
+
+h3 {
+  font-weight: bold;
+  font-style: oblique;
+  font-size: 1.5cm; }
+
+p {
+  background-color: #c9ac9a66;
+  border-style: double;
+  padding: 2%;
+  border-color: #f4d2bd; }
+
+h1 {
+  font-stretch: ultra-expanded;
+  font-size: xx-large;
+  position: fixed;
+  padding-right: 0%;
+  margin-left: 92%;
+  border-bottom-right-radius: 40%;
+  border-bottom-left-radius: 40%;
+  border-bottom-width: 20%;
+  background-color: rgba(130, 117, 93, 0.619); }
+
+h2 {
+  margin-left: 27%;
+  font-style: normal;
+  font-size: xx-large; }
+
+h5 {
+  font-family: Montserrat;
+  font-size: 0.5cm;
+  font-style: italic;
+  text-justify: auto; }
+
+h6 {
+  text-decoration-color: #fcfafa;
+  font-size: 0.5cm; }
+
+.contact {
+  padding: auto;
+  align-items: center; }
+
+.section {
+  justify-content: center; }
+
+.grid {
+  grid-column-gap: 5px;
+  grid-row-gap: 5px; }
+
+@media only screen and (max-width: 320px) {
+  table {
+    padding: 2%;
+    margin-left: 3%;
+    margin-right: 3%;
+    justify-content: flex-start; }
+  .tablafinal {
+    background-color: rgba(74, 57, 40, 0.732);
+    margin-left: 8%;
+    border-radius: 10%;
+    text-align: center;
+    justify-content: flex-start; }
+  body {
+    background-image: url(multimedia/fondoborrosomarmolPC.jpg);
+    background-color: #080707;
+    background-size: auto;
+    background-attachment: fixed;
+    background-position-x: left;
+    font-family: Montserrat; }
+  .contact {
+    padding: auto;
+    align-items: center; }
+  .dib {
+    size-adjust: fixed; }
+  .grid-container {
+    grid-template-columns: auto; }
+  .grid-container2 {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-auto-flow: row; } }
